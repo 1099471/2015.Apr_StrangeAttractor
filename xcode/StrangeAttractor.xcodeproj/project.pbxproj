@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		117800EC83C14EE2918569D4 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 195CE8CDC66848169126DC4F /* CinderApp.icns */; };
+		21205D316D9A4A2EB4737828 /* StrangeAttractorApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CCB79B0A04EDE90C52DB7 /* StrangeAttractorApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E27D20771AC89F9000B740A8 /* pop_02.png in Resources */ = {isa = PBXBuildFile; fileRef = E27D20761AC89F9000B740A8 /* pop_02.png */; };
+		E27D20791AC89F9A00B740A8 /* pop_01.png in Resources */ = {isa = PBXBuildFile; fileRef = E27D20781AC89F9A00B740A8 /* pop_01.png */; };
+		E29F3A691ACE19C8000A1792 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F3A681ACE19C8000A1792 /* CoreFoundation.framework */; };
+		E29F3A6B1ACE19E0000A1792 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F3A6A1ACE19E0000A1792 /* CoreMIDI.framework */; };
+		E29F3AED1ACE2C4F000A1792 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F3AEC1ACE2C4F000A1792 /* Accelerate.framework */; };
+		E29F3B501ACE35B3000A1792 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29F3AFD1ACE35B3000A1792 /* RtMidi.cpp */; };
+		E29F3B7E1ACE35B3000A1792 /* MidiHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29F3B411ACE35B3000A1792 /* MidiHub.cpp */; };
+		E29F3B7F1ACE35B3000A1792 /* MidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29F3B421ACE35B3000A1792 /* MidiIn.cpp */; };
+		E29F3B801ACE35B3000A1792 /* MidiMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29F3B431ACE35B3000A1792 /* MidiMessage.cpp */; };
+		E29F3B811ACE35B3000A1792 /* MidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29F3B441ACE35B3000A1792 /* MidiOut.cpp */; };
+		E2CE17481AABD80A0094151B /* SubMover_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2CE17461AABD80A0094151B /* SubMover_01.cpp */; };
+		E2CE174B1AABDD530094151B /* SubMover_02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2CE17491AABDD530094151B /* SubMover_02.cpp */; };
+		E2D75FF31AAA950D006BCEAA /* Mover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2D75FF11AAA950D006BCEAA /* Mover.cpp */; };
+		E2F8F4C71AC794C2002C55A2 /* pop.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F8F4C61AC794C2002C55A2 /* pop.png */; };
+		E2F8F4CA1AC798CE002C55A2 /* SpriteImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F8F4C81AC798CE002C55A2 /* SpriteImage.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0F7CCB79B0A04EDE90C52DB7 /* StrangeAttractorApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = StrangeAttractorApp.cpp; path = ../src/StrangeAttractorApp.cpp; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		195CE8CDC66848169126DC4F /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* StrangeAttractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrangeAttractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6869BD6D4A40EDA7A5637B /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		B3C55424009F4350B5F9CD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E27D20761AC89F9000B740A8 /* pop_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pop_02.png; path = ../resources/pop_02.png; sourceTree = "<group>"; };
+		E27D20781AC89F9A00B740A8 /* pop_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pop_01.png; path = ../resources/pop_01.png; sourceTree = "<group>"; };
+		E29F3A681ACE19C8000A1792 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		E29F3A6A1ACE19E0000A1792 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreMIDI.framework; sourceTree = DEVELOPER_DIR; };
+		E29F3AEC1ACE2C4F000A1792 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		E29F3AF41ACE35B3000A1792 /* MidiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiConstants.h; sourceTree = "<group>"; };
+		E29F3AF51ACE35B3000A1792 /* MidiExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiExceptions.h; sourceTree = "<group>"; };
+		E29F3AF61ACE35B3000A1792 /* MidiHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiHeaders.h; sourceTree = "<group>"; };
+		E29F3AF71ACE35B3000A1792 /* MidiHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiHub.h; sourceTree = "<group>"; };
+		E29F3AF81ACE35B3000A1792 /* MidiIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiIn.h; sourceTree = "<group>"; };
+		E29F3AF91ACE35B3000A1792 /* MidiMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiMessage.h; sourceTree = "<group>"; };
+		E29F3AFA1ACE35B3000A1792 /* MidiOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiOut.h; sourceTree = "<group>"; };
+		E29F3AFC1ACE35B3000A1792 /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtError.h; sourceTree = "<group>"; };
+		E29F3AFD1ACE35B3000A1792 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
+		E29F3AFE1ACE35B3000A1792 /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMidi.h; sourceTree = "<group>"; };
+		E29F3B411ACE35B3000A1792 /* MidiHub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiHub.cpp; sourceTree = "<group>"; };
+		E29F3B421ACE35B3000A1792 /* MidiIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiIn.cpp; sourceTree = "<group>"; };
+		E29F3B431ACE35B3000A1792 /* MidiMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiMessage.cpp; sourceTree = "<group>"; };
+		E29F3B441ACE35B3000A1792 /* MidiOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidiOut.cpp; sourceTree = "<group>"; };
+		E2CE17461AABD80A0094151B /* SubMover_01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubMover_01.cpp; sourceTree = "<group>"; };
+		E2CE17471AABD80A0094151B /* SubMover_01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMover_01.h; sourceTree = "<group>"; };
+		E2CE17491AABDD530094151B /* SubMover_02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubMover_02.cpp; sourceTree = "<group>"; };
+		E2CE174A1AABDD530094151B /* SubMover_02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMover_02.h; sourceTree = "<group>"; };
+		E2D75FF11AAA950D006BCEAA /* Mover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mover.cpp; sourceTree = "<group>"; };
+		E2D75FF21AAA950D006BCEAA /* Mover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mover.h; sourceTree = "<group>"; };
+		E2F8F4C61AC794C2002C55A2 /* pop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pop.png; path = ../resources/pop.png; sourceTree = "<group>"; };
+		E2F8F4C81AC798CE002C55A2 /* SpriteImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteImage.cpp; sourceTree = "<group>"; };
+		E2F8F4C91AC798CE002C55A2 /* SpriteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteImage.h; sourceTree = "<group>"; };
+		E5E47662D39C4FFEA101618B /* StrangeAttractor_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = StrangeAttractor_Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29F3AED1ACE2C4F000A1792 /* Accelerate.framework in Frameworks */,
+				E29F3A6B1ACE19E0000A1792 /* CoreMIDI.framework in Frameworks */,
+				E29F3A691ACE19C8000A1792 /* CoreFoundation.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				E29F3AEE1ACE35B3000A1792 /* Cinder-MIDI2 */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0F7CCB79B0A04EDE90C52DB7 /* StrangeAttractorApp.cpp */,
+				E2D75FF11AAA950D006BCEAA /* Mover.cpp */,
+				E2D75FF21AAA950D006BCEAA /* Mover.h */,
+				E2CE17461AABD80A0094151B /* SubMover_01.cpp */,
+				E2CE17471AABD80A0094151B /* SubMover_01.h */,
+				E2CE17491AABDD530094151B /* SubMover_02.cpp */,
+				E2CE174A1AABDD530094151B /* SubMover_02.h */,
+				E2F8F4C81AC798CE002C55A2 /* SpriteImage.cpp */,
+				E2F8F4C91AC798CE002C55A2 /* SpriteImage.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* StrangeAttractor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* StrangeAttractor */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = StrangeAttractor;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8D6869BD6D4A40EDA7A5637B /* Resources.h */,
+				E5E47662D39C4FFEA101618B /* StrangeAttractor_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E27D20781AC89F9A00B740A8 /* pop_01.png */,
+				E27D20761AC89F9000B740A8 /* pop_02.png */,
+				E2F8F4C61AC794C2002C55A2 /* pop.png */,
+				195CE8CDC66848169126DC4F /* CinderApp.icns */,
+				B3C55424009F4350B5F9CD9A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E29F3AEC1ACE2C4F000A1792 /* Accelerate.framework */,
+				E29F3A6A1ACE19E0000A1792 /* CoreMIDI.framework */,
+				E29F3A681ACE19C8000A1792 /* CoreFoundation.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29F3AEE1ACE35B3000A1792 /* Cinder-MIDI2 */ = {
+			isa = PBXGroup;
+			children = (
+				E29F3AF31ACE35B3000A1792 /* include */,
+				E29F3AFB1ACE35B3000A1792 /* lib */,
+				E29F3B401ACE35B3000A1792 /* src */,
+			);
+			name = "Cinder-MIDI2";
+			path = "../../../../../Documents/cinder_0.8.6_mac/blocks/Cinder-MIDI2";
+			sourceTree = "<group>";
+		};
+		E29F3AF31ACE35B3000A1792 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E29F3AF41ACE35B3000A1792 /* MidiConstants.h */,
+				E29F3AF51ACE35B3000A1792 /* MidiExceptions.h */,
+				E29F3AF61ACE35B3000A1792 /* MidiHeaders.h */,
+				E29F3AF71ACE35B3000A1792 /* MidiHub.h */,
+				E29F3AF81ACE35B3000A1792 /* MidiIn.h */,
+				E29F3AF91ACE35B3000A1792 /* MidiMessage.h */,
+				E29F3AFA1ACE35B3000A1792 /* MidiOut.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E29F3AFB1ACE35B3000A1792 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E29F3AFC1ACE35B3000A1792 /* RtError.h */,
+				E29F3AFD1ACE35B3000A1792 /* RtMidi.cpp */,
+				E29F3AFE1ACE35B3000A1792 /* RtMidi.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E29F3B401ACE35B3000A1792 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E29F3B411ACE35B3000A1792 /* MidiHub.cpp */,
+				E29F3B421ACE35B3000A1792 /* MidiIn.cpp */,
+				E29F3B431ACE35B3000A1792 /* MidiMessage.cpp */,
+				E29F3B441ACE35B3000A1792 /* MidiOut.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* StrangeAttractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "StrangeAttractor" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrangeAttractor;
+			productInstallPath = "$(HOME)/Applications";
+			productName = StrangeAttractor;
+			productReference = 8D1107320486CEB800E47090 /* StrangeAttractor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StrangeAttractor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* StrangeAttractor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* StrangeAttractor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27D20791AC89F9A00B740A8 /* pop_01.png in Resources */,
+				117800EC83C14EE2918569D4 /* CinderApp.icns in Resources */,
+				E2F8F4C71AC794C2002C55A2 /* pop.png in Resources */,
+				E27D20771AC89F9000B740A8 /* pop_02.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29F3B801ACE35B3000A1792 /* MidiMessage.cpp in Sources */,
+				E29F3B7E1ACE35B3000A1792 /* MidiHub.cpp in Sources */,
+				E2F8F4CA1AC798CE002C55A2 /* SpriteImage.cpp in Sources */,
+				E2CE174B1AABDD530094151B /* SubMover_02.cpp in Sources */,
+				E29F3B7F1ACE35B3000A1792 /* MidiIn.cpp in Sources */,
+				E29F3B501ACE35B3000A1792 /* RtMidi.cpp in Sources */,
+				21205D316D9A4A2EB4737828 /* StrangeAttractorApp.cpp in Sources */,
+				E2D75FF31AAA950D006BCEAA /* Mover.cpp in Sources */,
+				E29F3B811ACE35B3000A1792 /* MidiOut.cpp in Sources */,
+				E2CE17481AABD80A0094151B /* SubMover_01.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = StrangeAttractor_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/avseoul/Documents/cinder_0.8.6_mac/blocks/Cairo/lib/macosx,
+				);
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-D__MACOSX_CORE__";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = StrangeAttractor;
+				SDKROOT = macosx10.9;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = StrangeAttractor_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/avseoul/Documents/cinder_0.8.6_mac/blocks/Cairo/lib/macosx,
+				);
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = StrangeAttractor;
+				SDKROOT = macosx10.9;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../../../Documents/cinder_0.8.6_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = i386;
+				CINDER_PATH = ../../../../../Documents/cinder_0.8.6_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "StrangeAttractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StrangeAttractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
